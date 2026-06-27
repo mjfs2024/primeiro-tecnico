@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML5 e CSS Didáticos</title>
+    <style>
+        /* Este é um comentário CSS. Ele explica o código CSS abaixo. */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte do corpo do documento */
+            margin: 20px; /* Define uma margem de 20 pixels ao redor do corpo */
+            background-color: #f4f4f4; /* Define a cor de fundo do corpo */
+            color: #333; /* Define a cor do texto principal */
+        }
+        h1 {
+            color: #0056b3; /* Define a cor do título H1 */
+            border-bottom: 2px solid #0056b3; /* Adiciona uma borda inferior ao H1 */
+            padding-bottom: 10px; /* Adiciona um preenchimento inferior ao H1 */
+        }
+        h2 {
+            color: #007bff; /* Define a cor do título H2 */
+        }
+        p {
+            line-height: 1.6; /* Define a altura da linha para parágrafos */
+        }
+        .destaque {
+            background-color: yellow; /* Define a cor de fundo para elementos com a classe "destaque" */
+            font-weight: bold; /* Torna o texto em negrito */
+        }
+        #identificador-unico {
+            border: 1px solid red; /* Adiciona uma borda vermelha para o elemento com o ID "identificador-unico" */
+            padding: 5px; /* Adiciona um preenchimento interno */
+        }
+        a {
+            color: #28a745; /* Define a cor dos links */
+            text-decoration: none; /* Remove o sublinhado dos links */
+        }
+        a:hover {
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+        }
+        ul {
+            list-style-type: square; /* Define o tipo de marcador da lista não ordenada como quadrado */
+        }
+        ol {
+            list-style-type: upper-roman; /* Define o tipo de marcador da lista ordenada como números romanos maiúsculos */
+        }
+        table {
+            width: 100%; /* A tabela ocupa 100% da largura disponível */
+            border-collapse: collapse; /* Colapsa as bordas da tabela */
+            margin-top: 20px; /* Adiciona uma margem superior */
+        }
+        th, td {
+            border: 1px solid #ddd; /* Adiciona bordas às células da tabela */
+            padding: 8px; /* Adiciona preenchimento interno às células */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+        th {
+            background-color: #0056b3; /* Cor de fundo para o cabeçalho da tabela */
+            color: white; /* Cor do texto do cabeçalho */
+        }
+        img {
+            max-width: 100%; /* Garante que a imagem não exceda a largura do seu contêiner */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        form {
+            background-color: white; /* Cor de fundo do formulário */
+            padding: 20px; /* Preenchimento interno */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Sombra para o formulário */
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: calc(100% - 22px); /* Largura dos campos de entrada */
+            padding: 10px; /* Preenchimento interno */
+            margin-bottom: 10px; /* Margem inferior */
+            border: 1px solid #ccc; /* Borda dos campos */
+            border-radius: 4px; /* Bordas arredondadas */
+        }
+        button {
+            background-color: #007bff; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            padding: 10px 15px; /* Preenchimento do botão */
+            border: none; /* Remove a borda */
+            border-radius: 4px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de ponteiro */
+        }
+        button:hover {
+            background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Este é o elemento DOCTYPE, ele declara o tipo de documento e a versão do HTML (HTML5 neste caso). -->
+    <!-- Este é o elemento <html>, o elemento raiz de uma página HTML. Tudo o que está na página fica dentro dele. -->
+    <!-- Este é o elemento <head>, ele contém metadados sobre o documento, como o título da página, links para CSS e scripts. -->
+    <!-- Este é o elemento <meta charset="UTF-8">, ele especifica a codificação de caracteres para o documento, garantindo que os caracteres sejam exibidos corretamente. -->
+    <!-- Este é o elemento <meta name="viewport" content="width=device-width, initial-scale=1.0">, ele configura a viewport para que a página seja responsiva em diferentes dispositivos. -->
+    <!-- Este é o elemento <title>, ele define o título da página que aparece na aba do navegador. -->
+    <h1>Este é o H1 (Heading 1)</h1>
+    <!-- O elemento <h1> é usado para o título mais importante da página. Geralmente, há apenas um por página. -->
+
+    <h2>Este é o H2 (Heading 2)</h2>
+    <!-- O elemento <h2> é usado para subtítulos, de menor importância que o H1. -->
+
+    <h3>Este é o H3 (Heading 3)</h3>
+    <!-- O elemento <h3> é usado para subtítulos de menor importância que o H2. -->
+
+    <h4>Este é o H4 (Heading 4)</h4>
+    <!-- O elemento <h4> é usado para subtítulos de menor importância que o H3. -->
+
+    <h5>Este é o H5 (Heading 5)</h5>
+    <!-- O elemento <h5> é usado para subtítulos de menor importância que o H4. -->
+
+    <h6>Este é o H6 (Heading 6)</h6>
+    <!-- O elemento <h6> é usado para o subtítulo de menor importância. -->
+
+    <p>Este é um P (Parágrafo). Ele é usado para blocos de texto. <span class="destaque">Este texto está em destaque com a classe "destaque" usando CSS.</span></p>
+    <!-- O elemento <p> é usado para parágrafos de texto. -->
+    <!-- O elemento <span> é um contêiner genérico em linha para conteúdo de frase, não representa nada por si só, mas pode ser estilizado com CSS. -->
+
+    <p id="identificador-unico">Este parágrafo tem um ID único. IDs são usados para identificar um único elemento na página e podem ser estilizados com CSS ou manipulados com JavaScript.</p>
+    <!-- O atributo id é usado para especificar um ID único para um elemento HTML. -->
+
+    <a href="https://www.google.com" target="_blank">Este é um A (Link) para o Google</a>
+    <!-- O elemento <a> é usado para criar hiperlinks. O atributo href especifica o URL de destino. target="_blank" abre o link em uma nova aba. -->
+
+    <p><strong>Este texto está em STRONG (Negrito)</strong></p>
+    <!-- O elemento <strong> é usado para indicar texto com forte importância, geralmente exibido em negrito. -->
+
+    <p><em>Este texto está em EM (Itálico)</em></p>
+    <!-- O elemento <em> é usado para indicar ênfase, geralmente exibido em itálico. -->
+
+    <p><u>Este texto está em U (Sublinhado)</u></p>
+    <!-- O elemento <u> é usado para sublinhar texto. -->
+
+    <p><mark>Este texto está em MARK (Marcado)</mark></p>
+    <!-- O elemento <mark> é usado para destacar texto, geralmente com uma cor de fundo. -->
+
+    <p><small>Este texto está em SMALL (Pequeno)</small></p>
+    <!-- O elemento <small> é usado para texto menor, como direitos autorais ou comentários. -->
+
+    <p>Texto com <sub>subscrito</sub> e <sup>sobrescrito</sup></p>
+    <!-- Os elementos <sub> e <sup> são usados para texto subscrito e sobrescrito, respectivamente. -->
+
+    <p>Aqui está uma citação em BLOCKQUOTE:</p>
+    <blockquote cite="https://www.example.com">
+        <p>Este é um blockquote. Ele é usado para citar blocos de texto de outra fonte.</p>
+    </blockquote>
+    <!-- O elemento <blockquote> é usado para seções que são citadas de outra fonte. -->
+
+    <p>Este é um HR (Horizontal Rule):</p>
+    <hr>
+    <!-- O elemento <hr> é usado para criar uma linha horizontal, geralmente para separar conteúdo. -->
+
+    <p>Esta é uma lista não ordenada (UL - Unordered List):</p>
+    <ul>
+        <li>Item 1 da lista não ordenada</li>
+        <li>Item 2 da lista não ordenada</li>
+        <li>Item 3 da lista não ordenada</li>
+    </ul>
+    <!-- O elemento <ul> é usado para criar listas de itens sem uma ordem específica. -->
+    <!-- O elemento <li> é usado para definir um item de lista. -->
+
+    <p>Esta é uma lista ordenada (OL - Ordered List):</p>
+    <ol>
+        <li>Primeiro item da lista ordenada</li>
+        <li>Segundo item da lista ordenada</li>
+        <li>Terceiro item da lista ordenada</li>
+    </ol>
+    <!-- O elemento <ol> é usado para criar listas de itens com uma ordem específica. -->
+
+    <p>Esta é uma imagem (IMG):</p>
+    <img src="https://via.placeholder.com/150" alt="Exemplo de Imagem">
+    <!-- O elemento <img> é usado para incorporar uma imagem em uma página HTML. O atributo src especifica o caminho da imagem e alt fornece um texto alternativo. -->
+
+    <p>Esta é uma tabela (TABLE):</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Cabeçalho 1</th>
+                <th>Cabeçalho 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dado 1.1</td>
+                <td>Dado 1.2</td>
+            </tr>
+            <tr>
+                <td>Dado 2.1</td>
+                <td>Dado 2.2</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- O elemento <table> é usado para criar tabelas. -->
+    <!-- O elemento <thead> é usado para agrupar o conteúdo do cabeçalho da tabela. -->
+    <!-- O elemento <tbody> é usado para agrupar o conteúdo do corpo da tabela. -->
+    <!-- O elemento <tr> é usado para definir uma linha na tabela. -->
+    <!-- O elemento <th> é usado para definir uma célula de cabeçalho na tabela. -->
+    <!-- O elemento <td> é usado para definir uma célula de dados na tabela. -->
+
+    <p>Este é um formulário (FORM):</p>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <!-- O elemento <label> é usado para associar um rótulo a um controle de formulário. -->
+        <!-- O elemento <input type="text"> é usado para criar um campo de entrada de texto de linha única. -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email">
+        <!-- O elemento <input type="email"> é usado para um campo de entrada de email. -->
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+        <!-- O elemento <textarea> é usado para criar um campo de entrada de texto de várias linhas. -->
+
+        <button type="submit">Enviar</button>
+        <!-- O elemento <button type="submit"> é usado para criar um botão que envia os dados do formulário. -->
+    </form>
+    <!-- O elemento <form> é usado para criar um formulário HTML para entrada do usuário. -->
+
+    <p>Este é um DIV (Division):</p>
+    <div>
+        <p>Este é um conteúdo dentro de uma DIV. DIVs são contêineres genéricos de nível de bloco para agrupar e estilizar conteúdo.</p>
+    </div>
+    <!-- O elemento <div> é um contêiner genérico de nível de bloco para conteúdo. -->
+
+    <p>Este é um SPAN (Span):</p>
+    <span>Este é um conteúdo dentro de um SPAN. SPANs são contêineres genéricos em linha para conteúdo de frase.</span>
+    <!-- O elemento <span> é um contêiner genérico em linha para conteúdo de frase. -->
+
+    <p>Este é um HEADER:</p>
+    <header>
+        <nav>
+            <a href="#">Link de Navegação</a>
+        </nav>
+        <!-- O elemento <nav> é usado para agrupar links de navegação. -->
+    </header>
+    <!-- O elemento <header> representa conteúdo introdutório ou um grupo de links de navegação. -->
+
+    <p>Este é um MAIN:</p>
+    <main>
+        <p>Este é o conteúdo principal da página. O elemento MAIN representa o conteúdo dominante do <body>.</p>
+    </main>
+    <!-- O elemento <main> representa o conteúdo dominante ou funcionalidade central do <body> do documento. -->
+
+    <p>Este é um FOOTER:</p>
+    <footer>
+        <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+    <!-- O elemento <footer> representa um rodapé para o seu conteúdo mais próximo de seção ou para o objeto raiz de seccionamento. -->
+
+    <p>Este é um ARTICLE:</p>
+    <article>
+        <h3>Título do Artigo</h3>
+        <p>Conteúdo de um artigo independente e auto-contido.</p>
+    </article>
+    <!-- O elemento <article> representa um conteúdo independente e auto-contido em um documento, página, aplicação ou site. -->
+
+    <p>Este é um SECTION:</p>
+    <section>
+        <h3>Título da Seção</h3>
+        <p>Conteúdo de uma seção genérica de um documento.</p>
+    </section>
+    <!-- O elemento <section> representa uma seção genérica de um documento ou aplicação. -->
+
+    <p>Este é um ASIDE:</p>
+    <aside>
+        <h4>Conteúdo Lateral</h4>
+        <p>Este é um conteúdo relacionado, mas que pode ser considerado separado do conteúdo principal.</p>
+    </aside>
+    <!-- O elemento <aside> representa uma seção de uma página que consiste em conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno. -->
+
+</body>
+</html> 
